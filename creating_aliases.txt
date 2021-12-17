@@ -1,0 +1,9 @@
+Digitar no terminal
+
+alias conn="netstat -plant | grep '80\|443' | grep -v LISTEN | wc -l"
+
+você define o comando entre as aspas duplas
+
+No entanto isso não faz o alias persistir depois de reiniciar a máquina
+
+Para isso, altere o arquivo .bashrc com o seguinte comando: nano ~/.bashrc, adicione o aliás criado no final do arquivo, salve e saia
